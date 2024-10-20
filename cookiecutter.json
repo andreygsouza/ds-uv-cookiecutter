@@ -1,10 +1,10 @@
 {
-    "author": "Kyle Puhger",
-    "email": "krpuhger@gmail.com",
-    "author_github_handle": "kpeez",
+    "author": "Andrey de Souza",
+    "email": "andreygsouza@gmail.com",
+    "author_github_handle": "andreygsouza",
     "project_name": "example-project",
     "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
-    "project_description": "This is a template repository for Python projects that uses the `uv` package installer and resolver.",
+    "project_description": "This is a template repository for Python projects that uses the `uv` package installer and resolver for Data Science projects.",
     "create_models_directory": [
         "y",
         "n"

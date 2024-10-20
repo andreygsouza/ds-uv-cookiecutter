@@ -34,9 +34,6 @@ dev-dependencies = [
   "tox",
   {% endif -%}
   {% if cookiecutter.mkdocs == 'y' -%}
-  "mkdocs",
-  "mkdocs-material",
-  "mkdocstrings[python]"
   {% endif -%}
 ]
 

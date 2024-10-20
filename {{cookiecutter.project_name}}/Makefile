@@ -30,13 +30,6 @@ test: ## Test the code with pytest
 	@echo "✅ Testing code: Running pytest"
 	@uv run pytest
 
-docs: ## Build and serve the documentation
-	@uv run mkdocs serve
-
-docs-test: ## Test if documentation can be built without warnings or errors
-	@echo "⚙️ Testing documentation build"
-	@uv run mkdocs build --strict
-
 update: ## Update pre-commit hooks
 	@echo "⚙️ Updating dependencies and pre-commit hooks"
 	@uv lock --upgrade
