@@ -1,8 +1,10 @@
 def foo() -> str:
     """Summary line.
+
     Extended description of function.
-    :param arg1: Description of arg1
-    :return: Description of return value
+
+    Returns:
+        str: Description of return value.
     """
 
     return "foo"

@@ -9,10 +9,6 @@
         "y",
         "n"
     ],
-    "publish_to": [
-        "none",
-        "pypi"
-    ],
     "tox": [
         "n",
         "y"
