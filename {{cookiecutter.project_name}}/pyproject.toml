@@ -37,7 +37,6 @@ dev-dependencies = [
 
 [project.urls]
 repository = "https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}"
-documentation = "https://{{cookiecutter.author_github_handle}}.github.io/{{cookiecutter.project_name}}/"
 
 [build-system]
 requires = ["hatchling"]

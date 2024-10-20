@@ -20,7 +20,6 @@ My cookiecutter repo for generating python projects using `uv` for package manag
 - Publishing to [Pypi](https://pypi.org/)
 - Testing with [pytest](https://docs.pytest.org/en/7.1.x/)
 - Test coverage with [codecov](https://about.codecov.io/)
-- Documentation with [MkDocs](https://www.mkdocs.org/)
 - Containerization with [Docker](https://www.docker.com/)
 
 ## Usage
