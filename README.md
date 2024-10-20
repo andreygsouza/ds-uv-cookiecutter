@@ -1,4 +1,4 @@
-# cookiecutter-uv
+# ds-uv-cookiecutter
 
 My cookiecutter repo for generating python projects using `uv` for package management for data science projects.
 
@@ -34,7 +34,7 @@ pip install cookiecutter
 Next, install the template directly from this repo:
 
 ```bash
-cookiecutter https://github.com/kpeez/uv-cookie.git
+cookiecutter https://github.com/andreygsouza/ds-uv-cookiecutter.git
 ```
 
 Finally, install the environment and the pre-commit hooks with
@@ -45,5 +45,5 @@ make install
 
 ## Acknowledgements
 
-This was inspired by the [cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry) repo by [fpgmaas](https://github.com/fpgmaas).
-I made some modifications to fit my personal use. Please check out fpgmaas' [cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry) for a more poetry-based comprehensive cookiecutter.
+This was inspired by the [data science template](https://github.com/vvssttkk/dst) repo by [vvssttkk](https://github.com/vvssttkk) and [uv-cookie](https://github.com/kpeez/uv-cookie) repo by [vvssttkk](https://github.com/kpeez).
+I made some modifications to fit my personal use.
