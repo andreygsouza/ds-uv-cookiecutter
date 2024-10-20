@@ -13,8 +13,7 @@ dependencies = [
   "matplotlib",  
   "seaborn",  
   "scikit-learn",  
-  "notebook",  
-  {% if cookiecutter.create_models_directory == 'y' -%} "torch",  {% endif -%}
+  "notebook",
   ]
 
 [tool.uv]

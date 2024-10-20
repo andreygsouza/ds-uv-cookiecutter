@@ -14,9 +14,6 @@ def remove(filename: str | Path) -> None:
 
 
 if __name__ == "__main__":
-    if "{{cookiecutter.create_models_directory}}" != "y":
-        remove("models")
-
     if "{{cookiecutter.dockerfile}}" != "y":
         remove("Dockerfile")
 
