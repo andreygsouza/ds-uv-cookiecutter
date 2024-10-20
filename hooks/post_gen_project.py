@@ -17,17 +17,6 @@ if __name__ == "__main__":
     if "{{cookiecutter.create_models_directory}}" != "y":
         remove("models")
 
-    if "{{cookiecutter.create_reports_directory}}" != "y":
-        # remove_dir("reports/figures")
-        remove("reports")
-
-    if "{{cookiecutter.include_github_actions}}" != "y":
-        remove(".github")
-
-    if "{{cookiecutter.mkdocs}}" != "y":
-        for file in ["docs", "mkdocs.yml"]:
-            remove(file)
-
     if "{{cookiecutter.dockerfile}}" != "y":
         remove("Dockerfile")
 
