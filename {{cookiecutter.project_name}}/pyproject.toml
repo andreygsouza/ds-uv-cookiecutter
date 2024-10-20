@@ -33,8 +33,6 @@ dev-dependencies = [
   {% if cookiecutter.tox == 'y' -%}
   "tox",
   {% endif -%}
-  {% if cookiecutter.mkdocs == 'y' -%}
-  {% endif -%}
 ]
 
 [project.urls]
