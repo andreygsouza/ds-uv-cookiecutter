@@ -32,9 +32,11 @@ dev-dependencies = [
 [project.urls]
 repository = "https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}"
 
+{% if cookiecutter.is_package == "y"-%}
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+{% endif%}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -5,6 +5,11 @@
     "project_name": "example-project",
     "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
     "project_description": "This is a template repository for Python projects that uses the `uv` package installer and resolver for Data Science projects.",
+    "is_package": [
+        "n",
+        "y"
+    ],
+
     "dockerfile": [
         "n",
         "y"
