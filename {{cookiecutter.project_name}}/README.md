@@ -19,6 +19,8 @@ The easiest way to install the package is using the `make install` recipe in the
 git clone <https://github.com/{{cookiecutter.author_github_handle}}/{{cookiecutter.project_name}}/>
 cd {{cookiecutter.project_slug}}
 make install
+# or
+tox -e install
 ```
 
 > **Note:** The package uses `uv` (<https://github.com/astral-sh/uv>) for python package installation and dependency resolution. If you wish to use `pip` for package installation, you can use the `requirements.txt` file to install the dependencies.
