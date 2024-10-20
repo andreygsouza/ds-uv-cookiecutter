@@ -7,6 +7,9 @@ datasets
 .ipynb_checkpoints
 *.egg-info
 
+# JetBrains IDE
+.idea/
+
 # C extensions
 *.so
 
