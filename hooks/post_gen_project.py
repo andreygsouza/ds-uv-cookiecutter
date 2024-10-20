@@ -22,5 +22,3 @@ if __name__ == "__main__":
 
     if "{{cookiecutter.codecov}}" != "y":
         remove("codecov.yaml")
-        if "{{cookiecutter.include_github_actions}}" == "y":
-            remove(".github/workflows/validate-codecov-config.yml")
