@@ -15,6 +15,7 @@ install: check_uv ## Install the virtual environment and pre-commit hooks
 	@if [ ! -d .git ]; then \
 		echo "Initializing a new Git repository..."; \
 		git init; \
+		git add .; \
 	fi
 	@uv run pre-commit install
 	@. .venv/bin/activate && mypy --install-types --non-interactive

@@ -42,18 +42,6 @@ Finally, install the environment and the pre-commit hooks with it.
 make install
 ```
 
-As alternative, you can use tox to install the environment and the pre-commit hooks.
-First, install tox:
-
-```bash
-pip install tox
-```
-
-Then, run the following command:
-```bash
-tox -e install
-```
-
 ## Acknowledgements
 
 This was inspired by the [data science template](https://github.com/vvssttkk/dst) repo by [vvssttkk](https://github.com/vvssttkk) and [uv-cookie](https://github.com/kpeez/uv-cookie) repo by [vvssttkk](https://github.com/kpeez).

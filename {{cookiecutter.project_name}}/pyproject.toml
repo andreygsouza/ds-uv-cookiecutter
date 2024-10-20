@@ -5,7 +5,7 @@ description = "{{cookiecutter.project_description}}"
 authors = [{ name = "{{cookiecutter.author}}", email = "{{cookiecutter.email}}" }]
 readme = "README.md"
 license = { file = "LICENSE" }
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
   "numpy",
   "pandas",  
@@ -26,12 +26,7 @@ dev-dependencies = [
   "pandas-stubs",
   "ipykernel",
   "notebook",
-  {% if cookiecutter.codecov == 'y' -%}
   "pytest-cov",
-  {% endif -%}
-  {% if cookiecutter.tox == 'y' -%}
-  "tox",
-  {% endif -%}
 ]
 
 [project.urls]
@@ -46,8 +41,8 @@ testpaths = ["tests"]
 addopts = "--log-cli-level=INFO -sv --durations=0"
 
 [tool.ruff]
-line-length = 100
-target-version = "py310"
+line-length = 80
+target-version = "py312"
 
 [tool.ruff.lint]
 select = [
@@ -82,8 +77,6 @@ ignore = [
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["E402", "F401", "D104"]
 
-[tool.ruff.lint.pydocstyle]
-convention = "google"
 
 [tool.ruff.format]
 quote-style = "double"
@@ -103,10 +96,8 @@ warn_unused_ignores = true
 show_error_codes = true
 exclude = [".venv"]
 
-{% if cookiecutter.codecov == "y"-%}
 [tool.coverage.report]
 skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["{{cookiecutter.project_slug}}"]
-{% endif%}
