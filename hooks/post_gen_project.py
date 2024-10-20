@@ -16,6 +16,3 @@ def remove(filename: str | Path) -> None:
 if __name__ == "__main__":
     if "{{cookiecutter.dockerfile}}" != "y":
         remove("Dockerfile")
-
-    if "{{cookiecutter.codecov}}" != "y":
-        remove("codecov.yaml")
