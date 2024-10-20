@@ -36,10 +36,22 @@ Next, install the template directly from this repo:
 cookiecutter https://github.com/andreygsouza/ds-uv-cookiecutter.git
 ```
 
-Finally, install the environment and the pre-commit hooks with
+Finally, install the environment and the pre-commit hooks with it.
 
 ```bash
 make install
+```
+
+As alternative, you can use tox to install the environment and the pre-commit hooks.
+First, install tox:
+
+```bash
+pip install tox
+```
+
+Then, run the following command:
+```bash
+tox -e install
 ```
 
 ## Acknowledgements
