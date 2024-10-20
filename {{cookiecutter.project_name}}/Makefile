@@ -7,11 +7,15 @@ check_uv: # install `uv` if not installed
  fi
  @uv self update
 
-install: check_uv ## Install the virtual environment and  pre-commit hooks
+install: check_uv ## Install the virtual environment and pre-commit hooks
  @echo "📦 Creating virtual environment"
  @uv lock
  @uv sync --all-extras --frozen
  @echo "🛠️ Installing developer tools..."
+ @if [ ! -d .git ]; then \
+  echo "Initializing a new Git repository..."; \
+  git init; \
+ fi
  @uv run pre-commit install
  @. .venv/bin/activate && mypy --install-types --non-interactive
 
